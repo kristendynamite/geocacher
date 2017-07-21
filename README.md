@@ -1,28 +1,54 @@
-# Geocacher
+## Independent Project - Javascript - Week Four
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+#### By **Kristen McKee, July 21, 2017**
 
-## Development server
+### Description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This app is a site where users can add geocaches they've hidden to a list. This app uses Google's Geocoding API to convert physical addresses to latitude and longitude, and to convert latitude and longitude coordinates to physical addresses.
 
-## Code scaffolding
+(Geocaching is an outdoor activity in which participants either hide or locate objects in obscure places. The location of these objects are stored on various listing sites as GPS coordinates.)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+<img src="https://raw.githubusercontent.com/kristendynamite/geocache/master/src/screenshot.png">
 
-## Build
+### Specs
+* Users can add new hidden geocaches to the site list, by physical location or GPS coordinates. They can also add themselves as creators of the geocaches they add.
+* Users can view all geocaches added to the site.
+* Users can click on a geocache from the list and see the physical location, the GPS coordinates, and the creator.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### Setup/Installation Requirements
+* Open CMD/Terminal
+* git clone `https://github.com/kristendynamite/geocacher.git`
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Running unit tests
+### Support and contact details
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Feel free to reach out with suggestions at kristen.dynamite@gmail.com
 
-## Running end-to-end tests
+### Technologies Used
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+**Main Languages used:**
 
-## Further help
+* Angular2
+* Angular CLI
+* CSS
+* Javascript
+* jQuery
+* HTML
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+**Other Technologies:**
+
+* Google Fonts
+* Bootstrap
+* Linter
+* Typescript
+
+### Bugs
+
+No bugs at this time!
+
+### License
+
+This project is licensed under the MIT License
+
+**Kristen McKee** Copyright (c) 2017
