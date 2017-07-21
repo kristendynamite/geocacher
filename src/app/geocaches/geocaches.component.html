@@ -1,4 +1,10 @@
 <h2>Find a treasure, or add your own!: </h2>
-<ul>
-  <li></li>
-</ul>
+
+<div *ngFor="let geocache of geocaches" (click)="goToDetailPage(geocache)" class="panel panel-default">
+  <div class="panel-body">
+    <h3>lat:{{geocache.lat}}</h3>
+    <h3>lng:{{geocache.lng}}</h3>
+    <!-- <h3>address:{{geocache.address}}</h3>
+    <p>Created by:{{geocache.creator}}</p> -->
+  </div>
+</div>

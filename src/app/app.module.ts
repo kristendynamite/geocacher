@@ -6,12 +6,14 @@ import { GeocachesComponent } from './geocaches/geocaches.component';
 import { AddGeocacheComponent } from './add-geocache/add-geocache.component';
 
 import { routing } from './app.routing';
+import { GeocacheDetailComponent } from './geocache-detail/geocache-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GeocachesComponent,
-    AddGeocacheComponent
+    AddGeocacheComponent,
+    GeocacheDetailComponent
   ],
   imports: [
     BrowserModule,
