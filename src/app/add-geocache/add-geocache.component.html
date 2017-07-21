@@ -1,3 +1,60 @@
-<p>
-  add-geocache works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3>Add New Geocache by Latitude and Longitude!</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Geocache Latitude:</label>
+        <br>
+        <input #newLatitude>
+      </div>
+
+      <div>
+        <label>Geocache Longitude:</label>
+        <br>
+        <input #newLongitude>
+      </div>
+
+      <div>
+        <label>Your Name:</label>
+        <br>
+        <textarea #newCreator></textarea>
+      </div>
+      <button (click)="submitByLatLong(newLatitude.value, newLongitude.value, newCreator.value); newLatitude.value=''; newLongitude.value=''; newCreator.value=''">Add</button>
+    </div>
+  </div>
+  <div class="panel-heading">
+    <h3>Add New Geocache by Address!</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Geocache Street Number:</label>
+        <br>
+        <textarea #newStreetNumber></textarea>
+      </div>
+      <div>
+        <label>Geocache Street Name:</label>
+        <br>
+        <textarea #newStreetName></textarea>
+      </div>
+      <div>
+        <label>Geocache City:</label>
+        <br>
+        <textarea #newCity></textarea>
+      </div>
+      <div>
+        <label>Geocache State:</label>
+        <br>
+        <textarea #newState></textarea>
+      </div>
+      <div>
+        <label>Your Name:</label>
+        <br>
+        <textarea #newCreator></textarea>
+      </div>
+      <button (click)="submitByAddress(newStreetNumber.value, newStreetName.value, newCity.value, newState.value, newCreator.value); newStreetNumber.value=''; newStreetName.value=''; newCity.value=''; nweState.value=''; newCreator.value=''">Add</button>
+    </div>
+  </div>
+</div>
