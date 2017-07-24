@@ -1,11 +1,9 @@
 <button type="submit" routerLink="./add-geocache">Add Your Geocache!</button>
 <h2>Find geocache treasures!:</h2>
 
-<div *ngFor="let geocache of geocaches| async" (click)="goToDetailPage(geocache)" class="panel panel-default">
+<div *ngFor="let geocache of geocaches| async" (click)="goToDetailPage" class="panel panel-default">
   <div class="panel-body">
     <h3>lat:{{geocache.lat}}</h3>
     <h3>lng:{{geocache.lng}}</h3>
-    <!-- <h3>address:{{geocache.address}}</h3>
-    <p>Created by:{{geocache.creator}}</p> -->
   </div>
 </div>

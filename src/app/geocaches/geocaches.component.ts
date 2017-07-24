@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 import { Geocache } from '../geocache.model';
 import { Router } from '@angular/router';
 import { GeocacheApiService } from '../geocache-api.service';
@@ -21,7 +22,8 @@ export class GeocachesComponent implements OnInit {
   }
 
   goToDetailPage(clickedGeocache: Geocache) {
-     this.router.navigate(['geocaches/' + clickedGeocache.lat]);
+    //  this.router.navigate(['geocaches/' + clickedGeocache.]);
+    //  this.router.navigate(['geocaches/' + clickedGeocache.$key]);
   };
 
 }

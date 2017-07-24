@@ -16,7 +16,7 @@ const appRoutes: Routes = [
   },
 
   {
-    path: 'geocache-detail:/id',
+    path: 'geocache',
     component: GeocacheDetailComponent
   }
 ];

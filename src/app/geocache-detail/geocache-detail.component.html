@@ -1,4 +1,12 @@
 <p>
   geocache-detail works!
 </p>
-<h2>This geocache has id number: {{geocacheId}}</h2>
+
+
+
+<div>
+  <h3>Lat:{{(geocacheToDisplay | async)?.lat}}</h3>
+  <h3>Lng:{{(geocacheToDisplay | async)?.lng}}</h3>
+  <h3>Address:{{(geocacheToDisplay | async)?.address}}</h3>
+  <h3>Created by:{{(geocacheToDisplay | async)?.creator}}</h3>
+</div>

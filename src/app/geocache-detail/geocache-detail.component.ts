@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Geocache } from '../geocache.model';
 import { GeocacheApiService } from '../geocache-api.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-geocache-detail',
@@ -11,15 +12,17 @@ import { GeocacheApiService } from '../geocache-api.service';
   providers: [GeocacheApiService]
 })
 export class GeocacheDetailComponent implements OnInit {
-  geocacheId: number = null;
+  geocacheId: string;
+  geocacheToDisplay;
 
 
-  constructor(private route: ActivatedRoute, private location: Location, private albumService: GeocacheApiService) { }
+  constructor(private route: ActivatedRoute, private location: Location, private geocacheService: GeocacheApiService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.geocacheId = parseInt(urlParameters['id']);
+      this.geocacheId = urlParameters['id'];
     });
+    this.geocacheToDisplay = this.geocacheService.getGeocacheById(this.geocacheId);
   }
 
 }
